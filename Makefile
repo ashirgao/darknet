@@ -48,7 +48,7 @@ COMMON+= `pkg-config --cflags opencv`
 endif
 
 ifeq ($(NUMPY), 1) 
-COMMON+= -DNUMPY -I/usr/include/python2.7/ -I/usr/lib/python2.7/dist-packages/numpy/core/include/numpy/
+COMMON+= -DNUMPY -I/usr/include/python3.6/ -I/usr/lib/python3.6/dist-packages/numpy/core/include/numpy/
 CFLAGS+= -DNUMPY
 endif
 
